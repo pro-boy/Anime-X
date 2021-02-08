@@ -1,33 +1,29 @@
+print(
+    "ㅤ\nㅤ\n\n\n\nㅤ\n┈┈┏━╮╭━┓┈╭━━━━━━╮\n┈┈┃┏┗┛┓┃╭┫ⓞⓘⓝⓚ ┃\n┈┈╰┓▋▋┏╯╯╰━━━━━━╯\n┈╭━┻╮╲┗━━━━╮╭╮┈\n┈┃▎▎┃╲╲╲╲╲╲┣━╯┈\n┈╰━┳┻▅╯╲╲╲╲┃┈┈┈\n┈┈┈╰━┳┓┏┳┓┏╯┈┈┈\n┈┈┈┈┈┗┻┛┗┻┛┈┈"
+)
+print("\n\n\n\n\nHello sir!!, I'm Here To Help u to Generate Telethon String Session")
+print("\n\nDarkCobra UserBot")
+
+print("\n\nProperly Fill APP_ID ,HASH and Number.\n")
+
 from telethon.sync import TelegramClient
 from telethon.sessions import StringSession
-print("")
-print("""Welcome To marhmello String Generator By  marshmellobot_Official""")
-print("""Kindly Enter Your Details To Continue ! """)
+APP_ID = int(input("Enter APP ID here: "))
+API_HASH = input("Enter API HASH here: ")
+with TelegramClient(StringSession(), APP_ID, API_HASH) as hehe:
+	dcsession = hehe.session.save()
+	dcobra = hehe.send_message(
+	    "me",
+	    f"`{dcsession}`\n\n**Your DarkCobra String Session Here Sir😁😎😎\nClick on above Code to Copy it\n\nFor Support Join** @Dark_Cobra_Support_Group"
+	)
 
-API_KEY = input("API_KEY: ")
-API_HASH = input("API_HASH: ")
+print("\n\n############################\n")
+print(
+    "check your Telegram Saved Messages For Ur New String String Session 😂😂 or see below. ")
 
-while True:
-	try:
-		with TelegramClient(StringSession(), API_KEY, API_HASH) as client:
-			print(
-			    "String Sent To Your Saved Message, Store It To A Safe Place!! "
-			)
-			print("")
-			session = client.session.save()
-			client.send_message(
-			    "me",
-			    f"Here is your TELEGRAM STRING SESSION\n(Tap to copy it)👇 \n\n `{session}` \n\n And Visit @HellBot_Official For Any Help !"
-			)
+print("\n############################\n")
 
-			print(
-			    "Thanks for Choosing HellBot Have A Good Time....Note That When You Terminate the Old Session ComeBack And Genrate A New String Session Old One Wont Work"
-			)
-	except:
-		print("")
-		print(
-		    "Wrong phone number \n make sure its with correct country code. Example : +919961998999 ! Kindly Retry"
-		)
-		print("")
-		continue
-	break
+
+print(f"{dcsession}")
+
+Print(" ")
