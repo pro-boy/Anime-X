@@ -30,7 +30,7 @@ uptime = tim
 #time = date + time okay
 TIME = time.asctime(time.localtime())
 #my name 👇
-LEGENDX22 = "[PEROBOY](https://t.me/PEROBOYY)"
+PROBOY = "[PEROBOY](https://t.me/PEROBOYY)"
 #my bots repo 👇
 OP = "[ANIME-X BOT](https://github.com/pro-boy/Anime-X)"
 #grpup👇NAME = "[{MAATER}](tg://user?id={X})"
