@@ -1,15 +1,12 @@
-
+import time
 import os
 import sys
-import time
 from telethon.sessions import StringSession
 from telethon import TelegramClient
-from userbot.helpers import functions as simpdef
-from userbot.uniborgConfig import Config
+from userbot.helper import functions as darkdef
 from var import Var
+from userbot.functions import dcfunction as topfunc
 
-StartTime = time.time()
-AnimeXversion = "2.0" 
 
 os.system("pip install --upgrade pip")
 if Var.STRING_SESSION:
@@ -19,19 +16,16 @@ else:
     session_name = "startup"
     bot = TelegramClient(session_name, Var.APP_ID, Var.API_HASH)
 
-
+Lastupdate = time.time()
 CMD_LIST = {}
-# for later purposes
 CMD_HELP = {}
-CMD_HELP_BOT = {}
-BRAIN_CHECKER = []
 INT_PLUG = ""
 LOAD_PLUG = {}
 
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 
-LEGEND_ID = ["1100231654"]
+CAT_ID = ["1289422521"]
 
 """ PPE initialization. """
 
@@ -77,9 +71,7 @@ if bool(ENV):
     # Userbot logging feature switch.
     BOTLOG = sb(os.environ.get("BOTLOG", "False"))
     LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
-    PATTERNS = os.environ.get("PATTERNS", ".;!,")
-    COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", r"\.")
-  
+    
     # Bleep Blop, this is a bot ;)
     PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 
@@ -110,9 +102,6 @@ if bool(ENV):
     # FedBan Premium Module
     F_BAN_LOGGER_GROUP = os.environ.get("F_BAN_LOGGER_GROUP", None)
 
-    #make by LEGEND X 
-    botnickname = os.environ.get("BOT_NICK_NAME", None)
-
 # Heroku Credentials for updater.
     HEROKU_MEMEZ = sb(os.environ.get("HEROKU_MEMEZ", "False"))
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -137,16 +126,15 @@ if bool(ENV):
     
     # Custom Module
     CUSTOM_PMPERMIT = os.environ.get("CUSTOM_PMPERMIT", None)
-    CUSTOM_AFK = os.environ.get("CUSTOM_AFK", None)
-
+    
     # Upstream Repo
     UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Pro-boy/Anime-X.git")
+    "https://github.com/DARK-COBRA/DARKCOBRA.git")
 
     # Last.fm Module
     BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-    BIO_MSG = os.environ.get("BIO_MSG", None)
+    DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
 
     LASTFM_API = os.environ.get("LASTFM_API", None)
     LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
@@ -190,15 +178,12 @@ for binary, path in binaries.items():
     os.chmod(path, 0o755)
 
 # Global Variables
+
 COUNT_MSG = 0
 USERS = {}
 COUNT_PM = {}
 LASTMSG = {}
+SUDO_LIST = {}
 CMD_HELP = {}
 ISAFK = False
 AFKREASON = None
-SUDO_LIST = {}
-
-
-from userbot.helpers import *
-from userbot.helpers import functions as legdef
