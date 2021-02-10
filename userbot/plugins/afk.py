@@ -126,8 +126,8 @@ async def on_afk(event):
         #           afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
         message_to_reply = (
-            f"__ Master Been #AFK since__ `{total_afk_time}`"
-            + f"\n\n_\n**REASON**: {reason}"
+            f"__ Master Been #AFK since__ `{total_afk_time}` Wait Till My Master Comes 😀"
+            + f"\n\n He Left A Reason Below\n // {reason} //"
             if reason
             else f"**Hey!!**\n`Master is  #AFK`\n\n__Since__>>> {total_afk_time}"
         )
@@ -182,7 +182,7 @@ async def _(event):
 CMD_HELP.update(
     {
         "afk": ".afk (reason)"
-        "\nUsage mention u as afk when someone tag or reply to any of ur msg or dm."
+        "\nUsage mention u as afk when someone tag or reply to any of ur msg or dm. Join @AnimeXSupport For Any help!!"
     }
 )
 
