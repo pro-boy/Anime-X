@@ -1,2 +1,2 @@
 # Andi Mandi Shandi Maine Kaha kya Tumhari Maa randi?
-![ ANIME ](https://pin.it/62DkiD8)
+![ ANIME ](https://pin.it/1hTEEQl)
