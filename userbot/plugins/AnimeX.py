@@ -39,9 +39,9 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             if event.query.user_id == bot.uid :
                 current_page_number=0
                 dc = paginate_help(current_page_number, CMD_LIST, "helpme")
-                await event.edit("`>>>\n\nReopened The Main Menu of \n©DARKCOBRA` ", buttons=dc)
+                await event.edit("`>>>\n\nReopened The Main Menu of \n©AnimeX` ", buttons=dc)
             else:
-                reply_pop_up_alert = "Please get your own Userbot,for more info visit @DARK_COBRA_SUPPORT!"
+                reply_pop_up_alert = "Suraj Chand Maa Chudae AnimeX Sabse High, Get Your Userbot\n           ©AnimeX"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
        
   #       🇮 🇹 🇳 🇦    🇰 🇾 🇺   🇸 🇵 🇾     🇰 🇷    🇷 🇭 🇪     🇭 🇴      🇸 🇭 🇦 🇦 🇩 🇮    🇰 🇷 🇳 🇮    🇭    🇰 🇾 🇦   🇧 🇸 🇩 🇰 
@@ -54,10 +54,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         if event.query.user_id == bot.uid and query.startswith("Userbot"):
             rev_text = query[::-1]
             dc = paginate_help(0, CMD_LIST, "helpme")
-            result = builder.article("© Dark Cobra Userbot Help",text="{}\nCurrently Loaded Plugins: {}".format(query, len(CMD_LIST)),buttons=dc,link_preview=False)
+            result = builder.article("© AnimeX Help",text="{}\nCurrently Loaded Plugins: {}".format(query, len(CMD_LIST)),buttons=dc,link_preview=False)
             await event.answer([result] if result else None)
         else:
-              reply_pop_up_alert = "Please get your own Userbot😁😁,for more info visit @DARK_COBRA_SUPPORT! 😎😎"
+              reply_pop_up_alert = "Suraj Chand Maa Chudae AnimeX Sabse High, Get Your Userbot\n           ©AnimeX"
               await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
     @tgbot.on(events.callbackquery.CallbackQuery(  # pylint:disable=E0602
         data=re.compile(b"helpme_next\((.+?)\)")
@@ -72,7 +72,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
           
             await event.edit(buttons=dc)
         else:
-            Cobra = "Please get your own Userbot, and don't use mine for more info visit @DARK_COBRA_SUPPORT!"
+            Cobra = "Suraj Chand Maa Chudae AnimeX Sabse High, Get Your Userbot\n           ©AnimeX"
             await event.answer(Cobra, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(  # pylint:disable=E0602
@@ -91,7 +91,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             
             await event.edit(buttons=dc)
         else:
-              TheDark = "Please get your own Userbot😁😁,for more info visit @DARK_COBRA_SUPPORT! 😎😎"
+              TheDark = "Suraj Chand Maa Chudae AnimeX Sabse High, Get Your Userbot\n           ©AnimeX"
               await event.answer(TheDark, cache_time=0, alert=True)
  #hehehehehhehhehhehe   
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
@@ -100,7 +100,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             danish = custom.Button.inline("◤✞ 𝕺𝖕𝖊𝖓 𝕸𝖆𝖎𝖓 𝕸𝖊𝖓𝖚 𝕬𝖌𝖆𝖎𝖓 ✞◥", data="open")
             await event.edit("`Main Menu Has Been Closed`", buttons=danish)
         else:
-            reply_pop_up_alert = "Please get your own Userbot😁😁,for more info visit @DARK_COBRA_SUPPORT! 😎😎"
+            reply_pop_up_alert = "Suraj Chand Maa Chudae AnimeX Sabse High, Get Your Userbot\n           ©AnimeX"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
    
 
@@ -112,7 +112,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     )
     async def on_plug_in_callback_query_handler(event):
         if not event.query.user_id == bot.uid:
-            atul= "Please get your own Userbot😁😁,for more info visit @DARK_COBRA_SUPPORT! 😎😎"
+            atul= "Suraj Chand Maa Chudae AnimeX Sabse High, Get Your Userbot\n           ©AnimeX"
             await event.answer(atul, cache_time=0, alert=True)
             return
         plugin_name = event.data_match.group(1).decode("UTF-8")
@@ -133,7 +133,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
 
         reply_pop_up_alert = help_string
         reply_pop_up_alert += (
-            "\n\n __Click on buttons below to load or unload them..report us if you find any bug__\n\n **©DARKCOBRA USERBOT**".format(plugin_name)
+            "\n\n __Click on buttons below to load or unload them..report us if you find any bug__\n\n **©AnimeX Userbot**".format(plugin_name)
         )
         try:
             if event.query.user_id == bot.uid :
@@ -148,7 +148,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 halps = "Do .help {} to get the list of commands.".format(plugin_name)
                 await event.edit(halps,buttons=sh1vam)
             else:
-                reply_pop_up_alert = "Please get your own Userbot, and don't use mine for more info visit @DARK_COBRA_SUPPORT!"
+                reply_pop_up_alert = "Suraj Chand Maa Chudae AnimeX Sabse High, Get Your Userbot\n           ©AnimeX"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"load\((.+?)\)")))
    
@@ -193,12 +193,12 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 try:
                     current_page_number = int(event.data_match.group(1).decode("UTF-8"))
                     buttons = paginate_help(current_page_number-2, CMD_HELP, "helpme")
-                    await event.edit("`>>> Here Is The Main Menu of\n\n©DARKCOBRA`", buttons=buttons)
+                    await event.edit("`>>> Here Is The Main Menu of\n\n©AnimeX`", buttons=buttons)
                 except:
                     buttons = paginate_help(0, CMD_HELP, "helpme")
-                    await event.edit("`>>> Here Is The Main Menu Of\n\n©DARKCOBRA`", buttons=buttons)
+                    await event.edit("`>>> Here Is The Main Menu Of\n\n©AnimeX`", buttons=buttons)
             else:
-                reply_pop_up_alert = "Please get your own Userbot,for more info visit @DARK_COBRA_SUPPORT!"
+                reply_pop_up_alert = "Suraj Chand Maa Chudae AnimeX Sabse High, Get Your Userbot\n           ©AnimeX"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 def paginate_help(page_number, loaded_plugins, prefix):
