@@ -30,16 +30,16 @@ uptime = tim
 #time = date + time okay
 TIME = time.asctime(time.localtime())
 #my name 👇
-LEGENDX22 = "[LEGEND X](https://t.me/legendx22)"
+LEGENDX22 = "[PEROBOY](https://t.me/PEROBOYY)"
 #my bots repo 👇
-OP = "[LEGEND BOT](https://github.com/legendx22/LEGEND-BOT)"
+OP = "[ANIME-X BOT](https://github.com/pro-boy/Anime-X)"
 #grpup👇NAME = "[{MAATER}](tg://user?id={X})"
 #yrr isko apne bot me aply krne se pehle mere se pooch lena ok
 #aur aage add kruga abhi busy okay 🤔
 
-OKAY = "[SUPPORT GROUP](https://t.me/LEGEND_USERBOT_SUPPORT)"
+OKAY = "[SUPPORT GROUP](https://t.me/ANIMEXSUPPORT)"
 #itna test h aur aage krte h
 #test successful raha ab aage 
-ALIVE = "LEGEND BOT IS ON 🔥 FIRE 🔥" #make by LEGENDX22
-BOT = " HELLO MASTER MY NAME IS LEGEND BOT I AM A BEST USERBOT 💝"
+ALIVE = "The world isn't perfect. But it's there for us Anime-X" #make by LEGENDX22
+BOT = "YO MY PERU MASTER I AM ANIME-X FOR YOU!!"
 EMOJI = "🔥"
