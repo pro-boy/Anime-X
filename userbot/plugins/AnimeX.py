@@ -97,7 +97,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
-            danish = custom.Button.inline("◤✞ 𝕺𝖕𝖊𝖓 𝕸𝖆𝖎𝖓 𝕸𝖊𝖓𝖚 𝕬𝖌𝖆𝖎𝖓 ✞◥", data="open")
+            danish = custom.Button.inline("Oᴘєи Mαɪи Mєиυ Aɢαɪи", data="open")
             await event.edit("`Main Menu Has Been Closed`", buttons=danish)
         else:
             reply_pop_up_alert = "Suraj Chand Maa Chudae AnimeX Sabse High, Get Your Userbot\n           ©AnimeX"
@@ -119,7 +119,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         global shivam_sh1vam
         shivam_sh1vam="{}".format(plugin_name)
         help_string = "Commands found in {}:\n".format(plugin_name)
-        k = "💠🔮💎"
+        k = "✨✨✨"
         u = 0
         for i in CMD_LIST[plugin_name]:
             u += 1
@@ -129,7 +129,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 f"**📤 PLUGIN NAME 📤 :** `{plugin_name}` \n\n{CMD_HELP[plugin_name]}"
             )
         else:
-            help_string += "😁"
+            help_string += "💫"
 
         reply_pop_up_alert = help_string
         reply_pop_up_alert += (
@@ -137,14 +137,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         )
         try:
             if event.query.user_id == bot.uid :
-                dc = [custom.Button.inline(" 𝕭𝖆𝖈𝖐 ",data="back({})".format(shivam)),custom.Button.inline(" 𝕮𝖑𝖔𝖘𝖊 ", data="close"),custom.Button.inline(" 𝖀𝖓𝖑𝖔𝖆𝖉 ",data="unload({})".format(shivam_sh1vam))]
+                dc = [custom.Button.inline("Bαϲκ",data="back({})".format(shivam)),custom.Button.inline(" 𝕮𝖑𝖔𝖘𝖊 ", data="close"),custom.Button.inline(" 𝖀𝖓𝖑𝖔𝖆𝖉 ",data="unload({})".format(shivam_sh1vam))]
                 await event.edit(reply_pop_up_alert, buttons=dc)
             else:
-                reply_pop_up_alert = "Please get your own Userbot, and don't use mine for more info visit @DARK_COBRA_SUPPORT!"
+                reply_pop_up_alert = "Suraj Chand Maa Chudae AnimeX Sabse High, Get Your Userbot\n           ©AnimeX"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)#hehe
         except: 
             if event.query.user_id == bot.uid :
-                sh1vam = [custom.Button.inline("◤✞ 𝕲𝖔 𝕭𝖆𝖈𝖐 ✞◥",data="back({})".format(shivam)),custom.Button.inline("◤✞ 𝕮𝖑𝖔𝖘𝖊 ✞◥", data="close")]
+                sh1vam = [custom.Button.inline("Gο Bαϲκ",data="back({})".format(shivam)),custom.Button.inline("Cʟοѕє", data="close")]
                 halps = "Do .help {} to get the list of commands.".format(plugin_name)
                 await event.edit(halps,buttons=sh1vam)
             else:
@@ -158,14 +158,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
 #  🇦 🇷 🇪      🇧 🇸 🇩 🇰      🇮 🇸 🇸 🇪    🇰 🇦 🇳 🇬  🇲 🇦 🇹   🇰 🇷    🇷 🇪   🇲 🇨 
                     
                     try:
-                        fcix = [custom.Button.inline("  𝕭𝖆𝖈𝖐 ",data="back({})".format(shivam)),custom.Button.inline(" 𝕮𝖑𝖔𝖘𝖊 ", data="close"),custom.Button.inline(" 𝖀𝖓𝖑𝖔𝖆𝖉 ",data="unload({})".format(shivam_sh1vam))]
+                        fcix = [custom.Button.inline("Bαϲκ",data="back({})".format(shivam)),custom.Button.inline("Cʟοѕє", data="close"),custom.Button.inline(" 𝖀𝖓𝖑𝖔𝖆𝖉 ",data="unload({})".format(shivam_sh1vam))]
                         load_module(event.data_match.group(1).decode("UTF-8"))# kyu sir kang krne m musil aa rhi h kya ... Bolo help kr du kya 😂😂😂
                         await event.edit( "`Your DarkCobra Has Successfully loaded` >>>" + str(event.data_match.group(1).decode("UTF-8")),buttons=fcix)
                     except Exception as e:
-                        await event.edit("Error{}".format(shortname, str(e))+ "DarkCobra Has Successfully loaded" + str(event.data_match.group(1).decode("UTF-8")),buttons=fcix)
+                        await event.edit("Error{}".format(shortname, str(e))+ "AnimeX Has Successfully loaded" + str(event.data_match.group(1).decode("UTF-8")),buttons=fcix)
               else:
                     shortname = event.data_match.group(1).decode("UTF-8")
-                    fcix = [custom.Button.inline("  𝕭𝖆𝖈𝖐 ",data="back({})".format(shivam)),custom.Button.inline(" 𝕮𝖑𝖔𝖘𝖊 ", data="close"),custom.Button.inline(" 𝖀𝖓𝖑𝖔𝖆𝖉 ",data="unload({})".format(shivam_sh1vam))]
+                    fcix = [custom.Button.inline("Bαϲκ",data="back({})".format(shivam)),custom.Button.inline("Cʟοѕє", data="close"),custom.Button.inline(" 𝖀𝖓𝖑𝖔𝖆𝖉 ",data="unload({})".format(shivam_sh1vam))]
                     reply_pop_up_alert = "Please get your own Userbot,for more info visit @DARK_COBRA_SUPPORT!"
                     await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"unload\((.+?)\)")))
@@ -175,15 +175,15 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     
                     
                     try:
-                        fcix = [custom.Button.inline(" 𝕭𝖆𝖈𝖐 ",data="back({})".format(shivam)),custom.Button.inline(" 𝕮𝖑𝖔𝖘𝖊 ", data="close"),custom.Button.inline(" 𝕷𝖔𝖆𝖉 ",data="load({})".format(shivam_sh1vam))]
+                        fcix = [custom.Button.inline("Cʟοѕє",data="back({})".format(shivam)),custom.Button.inline("Cʟοѕє", data="close"),custom.Button.inline(" 𝕷𝖔𝖆𝖉 ",data="load({})".format(shivam_sh1vam))]
                         remove_plugin(event.data_match.group(1).decode("UTF-8"))#kyu sir kang krne m muskil ho rhi h kya bologe toh help krdu 😂😂
-                        await event.edit( "`Your DarkCobra Has Successfully unloaded` >>>" + str(event.data_match.group(1).decode("UTF-8")),buttons=fcix)
+                        await event.edit( "`Your AnimeX Has Successfully unloaded` >>>" + str(event.data_match.group(1).decode("UTF-8")),buttons=fcix)
                     except Exception as e:
                         await event.edit("Error{}".format(shortname, str(e)) +"DarkCobra Has Successfully unloaded"+ str(event.data_match.group(1).decode("UTF-8")),buttons=fcix)
               else:
                     shortname = event.data_match.group(1).decode("UTF-8")
-                    fcix = [custom.Button.inline("  𝕭𝖆𝖈𝖐 ",data="back({})".format(shivam)),custom.Button.inline(" 𝕮𝖑𝖔𝖘𝖊 ", data="close"),custom.Button.inline(" 𝕷𝖔𝖆𝖉 ",data="load({})".format(shivam_sh1vam))]
-                    reply_pop_up_alert = "Please get your own Userbot,for more info visit @DARK_COBRA_SUPPORT!"
+                    fcix = [custom.Button.inline("Bαϲκ",data="back({})".format(shivam)),custom.Button.inline("Cʟοѕє", data="close"),custom.Button.inline(" 𝕷𝖔𝖆𝖉 ",data="load({})".format(shivam_sh1vam))]
+                    reply_pop_up_alert = "Please get your own Userbot"
                     await event.answer(reply_pop_up_alert, cache_time=0, alert=True)#hehehe
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"back\((.+?)\)")))
    
